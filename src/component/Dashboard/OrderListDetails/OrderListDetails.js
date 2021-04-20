@@ -8,7 +8,7 @@ const OrderListDetails = ({ list }) => {
     function deleteProduct(id, event) {
       
         console.log("delete", id)
-        fetch(`http://localhost:9000/delete/${id}`, {
+        fetch(`https://intense-ridge-44549.herokuapp.com/delete/${id}`, {
             method: 'DELETE'
         })
             .then(res => res.json())

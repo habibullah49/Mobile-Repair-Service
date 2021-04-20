@@ -27,7 +27,7 @@ const AddService = () => {
         formData.append('price', info.price);
         console.log(formData);
 
-        fetch('http://localhost:9000/addService', {
+        fetch('https://intense-ridge-44549.herokuapp.com/addService', {
             method: 'POST',
            
             body: formData

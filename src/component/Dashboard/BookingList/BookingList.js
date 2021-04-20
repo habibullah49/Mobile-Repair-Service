@@ -7,7 +7,7 @@ const BookingList = () => {
     const [loggedInUser, setLoggedInUser] = useContext(UserContext)
     const [bookItem, setBookItem] = React.useState([])
     React.useEffect(() => {
-        fetch('http://localhost:9000/bookCollection?email=' + loggedInUser.email)
+        fetch('https://intense-ridge-44549.herokuapp.com/bookCollection?email=' + loggedInUser.email)
             .then(res => res.json())
             .then(data => {
               

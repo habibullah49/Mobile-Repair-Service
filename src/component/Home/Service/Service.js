@@ -40,7 +40,7 @@ const Service = () => {
 
 
 
-    fetch("http://localhost:9000/service")
+    fetch("https://intense-ridge-44549.herokuapp.com/service")
         .then(res => res.json())
         .then(data => setServiceData(data))
 

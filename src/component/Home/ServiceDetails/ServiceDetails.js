@@ -13,7 +13,7 @@ const ServiceDetails = () => {
     const { id } = useParams()
    
     React.useEffect(() => {
-        fetch(`http://localhost:9000/service/${id}`)
+        fetch(`https://intense-ridge-44549.herokuapp.com/service/${id}`)
             .then((res) => res.json())
             .then((data) => {
                
@@ -46,7 +46,7 @@ const ServiceDetails = () => {
             orderTime: new Date()
         }
         console.log("newInfo ", newInformation);
-        fetch('http://localhost:9000/addBooking', {
+        fetch('https://intense-ridge-44549.herokuapp.com/addBooking', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(newInformation)
