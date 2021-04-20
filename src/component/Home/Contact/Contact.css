@@ -1,0 +1,12 @@
+.contact-bg {
+  background-color: #fbd062;
+}
+.contact-content {
+  padding-top: 70px;
+}
+
+#message {
+  margin-top: 20px;
+  border: none;
+  border-radius: 4px;
+}
